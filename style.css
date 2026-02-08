@@ -116,6 +116,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding-bottom: 10px;
 }
 .best-seller-card{
     background-color: #fff;
@@ -174,7 +175,7 @@ body{
 .best-seller-card .img-container:after{
     content: '';
     position: absolute;
-    background-color: #e9fffb;
+    background-color: #dbede9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -183,11 +184,15 @@ body{
     border-radius: 50%;
 }
 
+.categories-section{
+    padding-bottom: 50px;
+}
+
 .categories-section-title{
     text-align: center;
     font-size: 1.9rem;
     font-weight: 700;
-    margin-top: 50px;
+    margin: 50px 0 30px;
 }
 
 .categories-container{
@@ -195,7 +200,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     flex-wrap: wrap;
 }
 
@@ -220,7 +225,7 @@ body{
 
 .category-container .category-img-container::after{
     content: '';
-    background-color: #e9fffb;
+    background-color: #dbede9;
     width: 120px;
     height: 120px;
     top: 50%;
@@ -235,4 +240,67 @@ body{
     height: 100%;
     position: relative;
     z-index: 2;
+}
+
+.why-us-section{
+    background: url(why-us.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: fit-content;
+}
+
+.why-us-section::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.why-us-section-title{
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.why-us-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+.why-us-card{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+    /* gap: 100px; */
+}   
+
+.why-us-card svg{
+    width: 80px;
+    height: 80px;
+    fill: var(--accent-color);
+}
+
+.why-us-card-title{
+    font-size: 1.1rem;
+
+}
+.why-us-card-subtitle{
+    font-size: 1rem;
 }
