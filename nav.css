@@ -70,15 +70,13 @@ nav .call-us-cta-btn svg{
     nav .links-container{
         margin: 0;
         padding: 0;
-        z-index: 9;
         background-color: #fff;
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 50px;
+        top: 60px;
         left: 0;
         width: 100%;
-        max-height: 0;
         display: none;
     }
     nav .mobile-nav-toggle{
@@ -88,13 +86,20 @@ nav .call-us-cta-btn svg{
         margin-right: 10px;
         border: 1px solid #aaa;
     }
-    nav .mobile-nav-toggle .close-icon{
-        display: none;
+
+    nav .links-container.active {
+        display: flex;
+        min-width: 200px;
+        min-height: fit-content;
+        background-color: #fff;
+        z-index: 9;
     }
 
-    nav .links-container a {
-        margin: 0;
-        padding: 0;
+    nav .links-container.active a{
+        padding: 20px 10px;
     }
+    nav .mobile-nav-toggle .close-icon { display: none; }
+    nav .links-container.active .close-icon { display: block; }
+    nav .links-container.active .menu-icon { display: none; }
 
 }

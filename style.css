@@ -308,13 +308,15 @@ body{
 }
 
 @media (min-width: 360px) and (max-width: 420px) {
-    .hero-content{
-        padding-right: 10px;
-    }
+
     .hero{
         height: 23rem
     }
-
+    
+    .hero-content{
+        padding: 20px 20px 0 0;
+    }
+    
     .hero-title{
         font-size: 1.7rem;
         line-height: 60px;
@@ -333,12 +335,13 @@ body{
     }
 
     .best-seller-cards-container{
+        overflow-y: visible;
+        overflow-x: clip;
         flex-wrap: nowrap;
     }
     .best-seller-card{
-        clip-path: inset(-1000% 0% -1000% 0%);
         flex-shrink: 0;
-        width: 200;
-        height: 100;
+        /* width: 200px;
+        height: 100px; */
     }
 }
