@@ -66,7 +66,7 @@ nav .call-us-cta-btn svg{
         height: 50px;
 
     }
-    
+
     nav .links-container{
         margin: 0;
         padding: 0;
@@ -79,12 +79,22 @@ nav .call-us-cta-btn svg{
         left: 0;
         width: 100%;
         max-height: 0;
+        display: none;
     }
     nav .mobile-nav-toggle{
         display: flex;
+        padding: 3px;
+        border-radius: 7px;
+        margin-right: 10px;
+        border: 1px solid #aaa;
     }
+    nav .mobile-nav-toggle .close-icon{
+        display: none;
+    }
+
     nav .links-container a {
         margin: 0;
         padding: 0;
     }
+
 }
